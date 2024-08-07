@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "react-native-expo-2024-livia",
+    "slug": "react-native-expo-2024-livia",
+    "scheme": "react-native-expo-2024-livia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png",
+      "bundler": "metro"
+  }
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+
