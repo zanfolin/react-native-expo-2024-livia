@@ -28,5 +28,15 @@
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "private": true,
+  "expo" : {
+    "expo": {
+      "doctor": {
+        "reactNativeDirectoryCheck": {
+          "enabled": true
+        }
+      }
+    }
+  }  
 }
+
