@@ -1,11 +1,12 @@
-import { processFontFamily } from "expo-font";
+import { processFontFamily, useFonts } from "expo-font";
 import { createContext, useContext } from "react";
-import { ActivityIndicator } from "react-native-web";
+import { Text } from "react-native";
+import { ActivityIndicator, View } from "react-native-web";
 
 const FontContext = createContext({})
 
 
-export function FontProvider({ children }) {
+export function FontProvider ({ children }) { 
 
     const [loaded, error] = useFonts({
         regular: require("../../assets/fonts/Montserrat-Regular.ttf"),
@@ -25,7 +26,7 @@ export function FontProvider({ children }) {
         return ( 
         <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
             <Text style={{fontSize: 28, marginTop: 15}}>
-                carregando as fontes
+                carregando as fontes...
             </Text>
             <ActivityIndicator size="large" color="#0000ff"/>
         </View>
