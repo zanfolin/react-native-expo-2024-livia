@@ -43,15 +43,9 @@ export function AuthProvider({ children }) {
         loadStoragedData();
     },[]);
 
-    useEffect(()=>{
-        console.log("AuthProvider: ", user);
-    }, [user]);
-
     const signIn = async ({ email, password }) => {
         const response = await authUser({ email, password }); 
-        console.log(response);
-
-        if (!response) {
+            if (!response) {
             setUser({
                 autenticated: false,
                 user: null,
@@ -73,10 +67,6 @@ export function AuthProvider({ children }) {
         await AsyncStorage.removeItem("@payment:user");
         setUser({});
     };
-
-    useEffect(() => (
-        console.log('AuthProvider:', user)
-    ), [user]);
 
     if (user?.autenticated === null) {
         return ( 
